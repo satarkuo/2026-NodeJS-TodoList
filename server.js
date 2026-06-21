@@ -2,7 +2,11 @@ const http = require("http");
 const { v4: uuidv4 } = require("uuid");
 const errorHandle = require("./errorHandle");
 
-const todos = [];
+const todos = [
+  {
+    title: "待辦事項",
+  },
+];
 
 const requestListener = (req, res) => {
   const headers = {
